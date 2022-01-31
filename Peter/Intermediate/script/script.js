@@ -1,4 +1,5 @@
 // Exercise 1
+console.log('\nExercise 1:\n-------------------------------')
 
 //array of students
 const students = {Martin: 76, Thomas: 85, Klaus: 65, Maria: 93, David: 81};
@@ -33,11 +34,12 @@ for (student in students) {
 }
 //calculate average of the class and output
 averagesum/= index;
-console.log(`The average points of the class are ${averagesum}, this is ${getGrade(averagesum)} `)
+console.log(`\nThe average points of the class are ${averagesum}, this is ${getGrade(averagesum)} `)
 
 
 //==========================================================================================
 // Exercise 2
+console.log('\nExercise 2:\n-------------------------------')
 
 let output;
 
@@ -49,6 +51,16 @@ for (let i = 1; i < 101; i++ ) {
     console.log (output);
 }
 
+
 //==========================================================================================
 // Exercise 3
+console.log('\nExercise 3:\n-------------------------------')
 
+const symbol = '*';
+const endpoint = '******';
+let form = '';
+
+while (form != endpoint) {
+    form = form + symbol;
+    console.log (form);
+}
