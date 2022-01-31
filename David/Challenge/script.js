@@ -28,7 +28,7 @@ var studentName = prompt("Type a student's name please")
         var points = MathGrades[gradeIndex];
         document.getElementById("points").innerHTML = points;   
       } else {
-        console.log("Sorry " + studentName + " you don't seem to be a math student."); //console log fail statement
+        document.getElementById("statement").innerHTML = ("Sorry " + studentName + " you don't seem to be a math student."); // fail statement
       }
     if(points < 60){
         document.getElementById("points").style.color = "red";
