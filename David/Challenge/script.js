@@ -33,9 +33,9 @@ var studentName = prompt("Enter a student's name please")
 
     if(points < 60){
         document.getElementById("points").style.color = "red";
-    } else if (points >= 60 && points <= 70){
+    } else if (points >= 60 && points < 70){
         document.getElementById("points").style.color = "orange";
-    } else if (points > 70 && points < 100){
+    } else if (points >= 70 && points < 100){
         document.getElementById("points").style.color = "green";
     } else if (points >= 100){
         document.getElementById("points").style.color = "blue";
