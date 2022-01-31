@@ -9,4 +9,5 @@
 //     console.log("The weather is moderate")
 // }
 
+// Exercise 2 
 
