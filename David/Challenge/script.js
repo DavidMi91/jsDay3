@@ -18,8 +18,8 @@
 //     }
 // }
 
-Student = ["John", "Jane"]
-MathGrades =[70,85]
+Student = ["John", "Jane","Jim","Johanna"]
+MathGrades =[70,85,60,100]
 var studentName = prompt("Type a student's name please")
 
     if (Student.indexOf(studentName) > -1) { //indexof returns -1 for no match, and a number for match
@@ -30,11 +30,12 @@ var studentName = prompt("Type a student's name please")
       } else {
         document.getElementById("statement").innerHTML = ("Sorry " + studentName + " you don't seem to be a math student."); // fail statement
       }
+
     if(points < 60){
         document.getElementById("points").style.color = "red";
-    } else if (points > 60){
+    } else if (points >= 60 && points <= 70){
         document.getElementById("points").style.color = "orange";
-    } else if (points > 70){
+    } else if (points > 70 && points < 100){
         document.getElementById("points").style.color = "green";
     } else if (points >= 100){
         document.getElementById("points").style.color = "blue";
