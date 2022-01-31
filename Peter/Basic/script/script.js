@@ -1,5 +1,12 @@
 // Basic 1
-const temp = () => {return (Math.round(Math.random() * 30) - 5)};
+const temp = () => {
+    const temp = (Math.round(Math.random() * 30) - 5);
+    let outputText = "The weather is ";
+    if (temp < 11) {outputText += "cold";
+    } else {outputText += "moderate"};
+    return outputText + ` (${temp}°C)`;
+}
+
 
 //to use, type the function in console, so: temp()
 
@@ -16,3 +23,6 @@ const check = checkarr => {
 }
 
 //to use, type the function in console, with in these case, the defined array as parameter: check(arr)
+
+
+// Basic 3
