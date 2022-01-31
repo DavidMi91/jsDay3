@@ -20,7 +20,7 @@
 
 Student = ["John", "Jane","Jim","Johanna"]
 MathGrades =[70,85,60,100]
-var studentName = prompt("Type a student's name please")
+var studentName = prompt("Enter a student's name please")
 
     if (Student.indexOf(studentName) > -1) { //indexof returns -1 for no match, and a number for match
         document.getElementById("student").innerHTML = studentName;
@@ -28,7 +28,7 @@ var studentName = prompt("Type a student's name please")
         var points = MathGrades[gradeIndex];
         document.getElementById("points").innerHTML = points;   
       } else {
-        document.getElementById("statement").innerHTML = ("Sorry " + studentName + " you don't seem to be a math student."); // fail statement
+        document.getElementById("statement").innerHTML = ("Sorry " + studentName + " doesn't seem to be a math student."); // fail statement
       }
 
     if(points < 60){
