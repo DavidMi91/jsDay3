@@ -7,7 +7,6 @@ const temp = () => {
     return outputText + ` (${temp}°C)`;
 }
 
-
 //to use, type the function in console, so: temp()
 
 
