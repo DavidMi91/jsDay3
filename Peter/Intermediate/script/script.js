@@ -21,14 +21,34 @@ function getGrade (points) {
     }
     return Grade;
 }
+let averagesum = 0;
+let index = 0;
 
 //output all students
 for (student in students) {
     console.log(`${student} have an average grade of ${students[student]} points, this means it is an: ${getGrade(students[student])}` );
+    // for output class average
+    averagesum += students[student];
+    index++;
+}
+//calculate average of the class and output
+averagesum/= index;
+console.log(`The average points of the class are ${averagesum}, this is ${getGrade(averagesum)} `)
+
+
+//==========================================================================================
+// Exercise 2
+
+let output;
+
+for (let i = 1; i < 101; i++ ) {
+    output = '';
+    if (i%5) {output = i};
+    if (!(i%3)) { output = 'Fizz'};
+    if (!(i%5)) { output += 'Buzz'};
+    console.log (output);
 }
 
-// // output class average
-// const average = 
-// students.forEach(element => {
-//     students[element] += sum
-// });
+//==========================================================================================
+// Exercise 3
+
